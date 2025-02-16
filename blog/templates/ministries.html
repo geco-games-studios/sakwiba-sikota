@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="bg-gray-100">
+    <!-- Hero Section -->
+    <section class="relative py-20 bg-green-700 text-white">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Government Ministries" class="w-full h-full object-cover opacity-30">
+        </div>
+        <div class="relative container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Government Ministries</h1>
+            <p class="text-xl max-w-3xl">Explore the various ministries and their roles in shaping our nation's future.</p>
+        </div>
+    </section>
+
+    <!-- Ministries Overview -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Key Ministries</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Mining" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Ministry of Mining</h3>
+                        <p class="text-gray-600">Overseeing the country's mineral resources and sustainable mining practices.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Agriculture" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Ministry of Agriculture</h3>
+                        <p class="text-gray-600">Promoting sustainable farming practices and food security initiatives.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Fisheries" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Ministry of Fisheries</h3>
+                        <p class="text-gray-600">Managing marine resources and supporting the fishing industry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Ministries -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Other Important Ministries</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span>Ministry of Education</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span>Ministry of Health</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span>Ministry of Finance</span>
+                    </li>
+                </ul>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span>Ministry of Foreign Affairs</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span>Ministry of Defense</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span>Ministry of Environment</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
