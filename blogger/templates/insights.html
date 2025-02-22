@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% include 'nav.html' %}
+
+<section class="min-h-screen pt-24 px-4 md:px-8 lg:px-16">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 text-center fade-in">Design Insights & Trends</h2>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="fade-in">
+                <img src="https://source.unsplash.com/random/800x600?minimal,geometric,1" 
+                     alt="Insight 1" 
+                     class="w-full aspect-square object-cover rounded-lg mb-6">
+                <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">5 min read</span>
+                <h3 class="font-bold text-xl mt-4 mb-2">Creating bold visual research and design trends</h3>
+                <p class="text-gray-600">Exploring the latest developments in digital design</p>
+            </div>
+
+            <div class="fade-in">
+                <img src="https://source.unsplash.com/random/800x600?minimal,geometric,2" 
+                     alt="Insight 2" 
+                     class="w-full aspect-square object-cover rounded-lg mb-6">
+                <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">3 min read</span>
+                <h3 class="font-bold text-xl mt-4 mb-2">Designing cohesive design and branding systems</h3>
+                <p class="text-gray-600">Building consistent brand experiences</p>
+            </div>
+
+            <div class="fade-in">
+                <img src="https://source.unsplash.com/random/800x600?minimal,geometric,3" 
+                     alt="Insight 3" 
+                     class="w-full aspect-square object-cover rounded-lg mb-6">
+                <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">4 min read</span>
+                <h3 class="font-bold text-xl mt-4 mb-2">Building expert advice and strategic insights</h3>
+                <p class="text-gray-600">Strategic approaches to design challenges</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

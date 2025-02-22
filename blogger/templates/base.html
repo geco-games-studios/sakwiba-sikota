@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakwiba Sikota</title>
+
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Swiper.js JavaScript -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1b8f41',
+                        secondary: '#e0791e',
+                        accent: '#323231',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Custom styles -->
+    <style>
+        .font-custom {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .swiper-slide::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+            z-index: 1;
+        }
+    
+        .swiper-slide .relative {
+            z-index: 2;
+        }
+    
+        .swiper-pagination-bullet {
+            background: white;
+            opacity: 0.6;
+        }
+    
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+        }
+    
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-white font-custom">
+    {% block content %}{% endblock %}
+</body>
+</html>

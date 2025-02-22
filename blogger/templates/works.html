@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+{% include 'nav.html' %}
+
+<section class="min-h-screen pt-24 px-4 md:px-8 lg:px-16">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-6 fade-in">Parliamentary Works & Achievements</h2>
+        <p class="text-gray-600 mb-12 max-w-3xl fade-in">Annual reports and key initiatives during my tenure as Member of Parliament for Livingstone Constituency (2001-2011)</p>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Water and Sanitation Initiatives -->
+            <div class="space-y-6 fade-in">
+                <img src="{% static 'images/water-sanitation.jpg' %}" 
+                     alt="Water and Sanitation Projects" 
+                     class="w-full aspect-[4/3] object-cover rounded-lg">
+                <div>
+                    <h3 class="font-bold mb-2">Water & Sanitation Reform</h3>
+                    <p class="text-gray-600">Infrastructure Development • 2004</p>
+                    <ul class="mt-4 text-sm text-gray-600 space-y-2">
+                        <li>• New water pipe system implementation</li>
+                        <li>• Extended coverage to Nakatindi and Sakubita</li>
+                        <li>• Parliamentary motion on water access</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Education Initiatives -->
+            <div class="space-y-6 fade-in">
+                <img src="{% static 'images/education.jpg' %}" 
+                     alt="Education Initiatives" 
+                     class="w-full aspect-[4/3] object-cover rounded-lg">
+                <div>
+                    <h3 class="font-bold mb-2">Education Development</h3>
+                    <p class="text-gray-600">Educational Reform • 2004</p>
+                    <ul class="mt-4 text-sm text-gray-600 space-y-2">
+                        <li>• School rehabilitation programs</li>
+                        <li>• Educational institution development</li>
+                        <li>• Poverty reduction through education</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Healthcare and HIV/AIDS -->
+            <div class="space-y-6 fade-in">
+                <img src="{% static 'images/healthcare.jpg' %}" 
+                     alt="Healthcare Initiatives" 
+                     class="w-full aspect-[4/3] object-cover rounded-lg">
+                <div>
+                    <h3 class="font-bold mb-2">Healthcare & HIV/AIDS Initiatives</h3>
+                    <p class="text-gray-600">Healthcare Reform • 2004</p>
+                    <ul class="mt-4 text-sm text-gray-600 space-y-2">
+                        <li>• Community health programs</li>
+                        <li>• HIV/AIDS awareness campaigns</li>
+                        <li>• Support for affected families</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detailed Report Section -->
+        <div class="mt-16 bg-gray-50 p-8 rounded-lg fade-in">
+            <h3 class="text-2xl font-bold mb-6">2004 Annual Report Overview</h3>
+            <div class="prose max-w-none text-gray-600">
+                <p class="mb-4">This report covering the period 1st January to 31st December 2004 is meant to afford my constituents a chance to interact with me by way of having information of some of the things that I have undertaken in the Constituency in the year 2004.</p>
+                
+                <div class="grid md:grid-cols-2 gap-8 mt-8">
+                    <div class="bg-white p-6 rounded-lg">
+                        <h4 class="font-bold mb-4">Key Achievements</h4>
+                        <ul class="space-y-2">
+                            <li>• Implementation of new water infrastructure</li>
+                            <li>• Educational institution development</li>
+                            <li>• Healthcare system improvements</li>
+                            <li>• Community development initiatives</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg">
+                        <h4 class="font-bold mb-4">Future Initiatives</h4>
+                        <ul class="space-y-2">
+                            <li>• Expansion of water coverage</li>
+                            <li>• Further educational reforms</li>
+                            <li>• Enhanced healthcare programs</li>
+                            <li>• Continued community support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="mt-12 text-center fade-in">
+            <p class="text-gray-600">For more information and detailed reports, please visit:</p>
+            <p class="font-bold mt-2">MP's Office, 4th Floor Musi-O-Tunya House</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

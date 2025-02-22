@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% include 'nav.html' %}
+
+<section class="min-h-screen pt-24 px-4 md:px-8 lg:px-16">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16 fade-in">
+            <h2 class="text-3xl font-bold mb-4">Got a Vision? Let's Bring it to Life!</h2>
+            <p class="text-gray-600">The fastest way to turn your idea into reality</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8 fade-in">
+                <div class="bg-black text-white p-8 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Exclusive Winter Deal</h3>
+                    <p class="mb-6">Get a Free Consultation!</p>
+                    <a href="mailto:hello@dnova.com" 
+                       class="inline-block px-6 py-3 bg-white text-black rounded-full hover:bg-gray-100 transition-colors">
+                        Book Call
+                    </a>
+                </div>
+            </div>
+            
+            <div class="space-y-8 fade-in">
+                <div class="space-y-4">
+                    <h3 class="text-xl font-bold">Contact Information</h3>
+                    <p class="text-gray-600">hello@dnova.com</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-gray-600 hover:text-black">Twitter</a>
+                        <a href="#" class="text-gray-600 hover:text-black">Instagram</a>
+                        <a href="#" class="text-gray-600 hover:text-black">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

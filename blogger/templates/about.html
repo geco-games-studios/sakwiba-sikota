@@ -1,0 +1,267 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+{% include 'nav.html' %}
+
+<section class="min-h-screen pt-24 px-4 md:px-8 lg:px-16">
+    <div class="max-w-6xl mx-auto space-y-16">
+        <!-- Introduction -->
+        <div class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Sakwiba Sikota S.C.</h1>
+            <p class="text-xl text-gray-600">State Counsel & Constitutional Law Expert</p>
+        </div>
+
+        <!-- Personal Information -->
+        <div class="flex flex-col md:flex-row gap-8 items-center">
+            <div class="md:w-1/2">
+                <h3 class="text-2xl font-bold mb-4">Personal Information</h3>
+                <div class="space-y-3 text-gray-600">
+                    <p>Born: 3rd January 1960 in Luanshya, Copperbelt Province, Zambia</p>
+                    <p>Residence: No. 4, Kabompo Close, Kalundu</p>
+                    <p>Nationality: Zambian by birth and descent</p>
+                    <p>Marital Status: Married since 29th November 1986, with two children</p>
+                    <p>Conferred with the Honour and dignity of State Counsel in August 2009</p>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="{% static 'images/1.jpg' %}" alt="Sakwiba Sikota" class="rounded-lg shadow-lg w-full">
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="flex flex-col md:flex-row-reverse gap-8 items-start">
+            <div class="md:w-1/2">
+                <h3 class="text-2xl font-bold mb-4">Educational Background</h3>
+                <div class="space-y-4 text-gray-600">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="font-semibold mb-2">International Baccalaureate (1977)</h4>
+                        <p>La Chategnarai, L'ecole International de Geneve</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="font-semibold mb-2">Honors Degree (1980)</h4>
+                        <p>Keele University, Staffordshire, United Kingdom</p>
+                        <p>Major: Law and Politics</p>
+                        <p>Minors: Psychology and Mathematics</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="font-semibold mb-2">Postgraduate Studies</h4>
+                        <p>University of Zambia (1982)</p>
+                        <p>Diploma in International Law</p>
+                        <p>Focus: International Universal Human Rights and Conflict of Laws</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="/placeholder.svg?height=400&width=500" alt="Educational Journey" class="rounded-lg shadow-lg w-full">
+            </div>
+        </div>
+
+        <!-- Legal Career -->
+        <div class="space-y-8">
+            <h3 class="text-2xl font-bold">Legal Career & Expertise</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h4 class="font-semibold mb-3">Areas of Expertise</h4>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li>Constitutional Law</li>
+                        <li>Media Law</li>
+                        <li>Commercial Transactions</li>
+                        <li>Intellectual Property Rights</li>
+                        <li>Securities Law</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h4 class="font-semibold mb-3">Notable Positions</h4>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li>Principal Partner - Central Chambers (1990-Present)</li>
+                        <li>Chairman - Law Association of Zambia (Two Terms)</li>
+                        <li>Member of Parliament - Livingstone Constituency (2001-2011)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notable Cases & Achievements -->
+        <div class="space-y-6">
+            <h3 class="text-2xl font-bold">Notable Cases & Achievements</h3>
+            <div class="space-y-4 text-gray-600">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <ul class="space-y-3">
+                        <li>• Led the First Republican President Dr. Kenneth David Kaunda's citizenship case</li>
+                        <li>• Lead counsel for UPND leader Hakainde Hichilema in high-profile cases</li>
+                        <li>• Represented High Judicial Officer in Tribunal under Article 98 (3) of the Constitution</li>
+                        <li>• Handled immunity removal case for Fourth Republican President Mr. Rupiah Banda</li>
+                        <li>• Prosecuted numerous Constitutional Petitions for property recovery</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Parliamentary Experience -->
+        <div class="space-y-6">
+            <h3 class="text-2xl font-bold">Parliamentary Service</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h4 class="font-semibold mb-3">Committee Memberships</h4>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• Privileges, Absences and Support Services Committee</li>
+                        <li>• Expanded Committee on Estimates</li>
+                        <li>• Health Community Development and Social Services</li>
+                        <li>• Youth and Sport Committee</li>
+                        <li>• Energy, Environment and Tourism Committee</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h4 class="font-semibold mb-3">Key Initiatives</h4>
+                    <p class="text-gray-600">Sponsored the Freedom of Information National Assembly Bill Number 14 of 2002, aimed at:</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600 mt-2">
+                        <li>Establishing Public Information Commission</li>
+                        <li>Providing right to access information</li>
+                        <li>Promoting transparency in governance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- International Experience -->
+        <div class="space-y-6">
+            <h3 class="text-2xl font-bold">International Experience</h3>
+            <div class="bg-gray-50 p-6 rounded-lg">
+                <ul class="space-y-3 text-gray-600">
+                    <li>• Election Observer - Tanzania Elections (2005)</li>
+                    <li>• Election Observer - Kenya Elections (2007)</li>
+                    <li>• United Nations 53rd session of the Commission on the Status on Women (2009)</li>
+                    <li>• National Democratic Institute International Leaders Forum (2008)</li>
+                    <li>• ACP-EU Joint Parliamentary Assembly Representative (2010-2011)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Personal Interests -->
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-gray-50 p-8 rounded-lg">
+                <h3 class="text-2xl font-bold mb-4">Hobbies & Interests</h3>
+                <div class="grid grid-cols-2 gap-4 text-gray-600">
+                    <div>
+                        <ul class="space-y-2">
+                            <li>• Writing</li>
+                            <li>• Reading</li>
+                            <li>• Tennis</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="space-y-2">
+                            <li>• Football</li>
+                            <li>• Culture</li>
+                            <li>• Drama</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-lg">
+                <h3 class="text-2xl font-bold mb-4">Languages</h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li>• English (Professional)</li>
+                    <li>• French</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="bg-gray-50 p-8 rounded-lg">
+            <h3 class="text-2xl font-bold mb-4">Contact Information</h3>
+            <div class="grid md:grid-cols-3 gap-4 text-gray-600">
+                <div>
+                    <p class="font-semibold">Address:</p>
+                    <p>P.O. Box 50468</p>
+                    <p>Lusaka, Zambia</p>
+                </div>
+                <div>
+                    <p class="font-semibold">Email:</p>
+                    <p>sakwiba@yahoo.com</p>
+                </div>
+                <div>
+                    <p class="font-semibold">Phone:</p>
+                    <p>0977-844001</p>
+                </div>
+            </div>
+        </div>
+        <!-- Childhood Gallery -->
+        <div class="space-y-6">
+            <h3 class="text-2xl font-bold">Childhood Memories</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Gallery Item 1 -->
+                <div class="space-y-3">
+                    <div class="relative group">
+                        <img src="{% static 'images/childhood1.jpg' %}" alt="Childhood Memory 1" 
+                            class="w-full h-64 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg"></div>
+                    </div>
+                    <p class="text-sm text-gray-600 text-center">Early School Days (1965)</p>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="space-y-3">
+                    <div class="relative group">
+                        <img src="{% static 'images/childhood2.jpg' %}" alt="Childhood Memory 2" 
+                            class="w-full h-64 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg"></div>
+                    </div>
+                    <p class="text-sm text-gray-600 text-center">Family Gathering (1968)</p>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="space-y-3">
+                    <div class="relative group">
+                        <img src="{% static 'images/childhood3.jpg' %}" alt="Childhood Memory 3" 
+                            class="w-full h-64 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg"></div>
+                    </div>
+                    <p class="text-sm text-gray-600 text-center">Sports Day (1970)</p>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="space-y-3">
+                    <div class="relative group">
+                        <img src="{% static 'images/childhood4.jpg' %}" alt="Childhood Memory 4" 
+                            class="w-full h-64 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg"></div>
+                    </div>
+                    <p class="text-sm text-gray-600 text-center">First Day at Secondary School (1972)</p>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="space-y-3">
+                    <div class="relative group">
+                        <img src="{% static 'images/childhood5.jpg' %}" alt="Childhood Memory 5" 
+                            class="w-full h-64 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg"></div>
+                    </div>
+                    <p class="text-sm text-gray-600 text-center">Family Holiday (1974)</p>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="space-y-3">
+                    <div class="relative group">
+                        <img src="{% static 'images/childhood6.jpg' %}" alt="Childhood Memory 6" 
+                            class="w-full h-64 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg"></div>
+                    </div>
+                    <p class="text-sm text-gray-600 text-center">School Achievement (1976)</p>
+                </div>
+            </div>
+
+            <!-- Add Photo Button -->
+            {% comment %} <div class="flex justify-center mt-8">
+                <button class="bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors duration-300 flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                    </svg>
+                    Add More Photos
+                </button>
+            </div> {% endcomment %}
+        </div>
+    </div>
+</section>
+{% endblock %}
