@@ -2,9 +2,10 @@ from django.shortcuts import render
 from .models import LatestNews, BlogInsights
 
 def home(request):
-    news = LatestNews.objects.all().order_by('-created_at')[:3]
-    insights = BlogInsights.objects.all().order_by('-created_at')[:4]
-    return render(request, 'index.html', {'news': news, 'insights': insights})
+    context = {
+        'is_home': True,  # Indicates this is the home page
+    }
+    return render(request, 'index.html', context)
 
 def about(request):
     return render(request, 'about.html')
@@ -12,8 +13,8 @@ def about(request):
 def experience(request):
     return render(request, 'experience.html')
 
-def works(request):
-    return render(request, 'works.html')
+def portfolio(request):
+    return render(request, 'portfolio.html')
 
 def insights(request):
     return render(request, 'insights.html')
